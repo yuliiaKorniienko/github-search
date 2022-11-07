@@ -1,0 +1,40 @@
+@import "./src/global-styles/variables";
+
+.item {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: $radius-default;
+  background-color: $background-color-default;
+  box-shadow: $box-shadow-default;
+
+  &_avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 30px;
+  }
+
+  &_login {
+    color: $primary-color;
+  }
+
+  &_link {
+    color: $primary-color;
+
+    &:visited {
+      color: #0a0b50;
+    }
+
+    &:hover {
+      color: #a239be;
+    }
+  }
+}

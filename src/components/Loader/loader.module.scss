@@ -1,0 +1,17 @@
+@import './src/global-styles/variables';
+
+.loader {
+  border-radius: 50%;
+  border-top: 8px solid $primary-color;
+  border-right: 8px solid $background-color-default;
+  border-bottom: 8px solid $primary-color;
+  border-left: 8px solid $background-color-default;
+  width: 30px;
+  height: 30px;
+  animation: spin 1.3s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

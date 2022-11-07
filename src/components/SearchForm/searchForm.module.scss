@@ -1,0 +1,58 @@
+@import './src/global-styles/variables';
+@import './src/global-styles/mixins';
+
+.form {
+  background-color: $background-color-default;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: $radius-default;
+  box-shadow: $box-shadow-default;
+
+  @media screen and (min-width: $media-screen-desktop) {
+    width: 900px;
+  }
+}
+
+.fieldset {
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 1px solid white;
+  border-radius: $radius-default;
+}
+
+.legend {
+  padding: 0 5px;
+  font-size: 16px;
+}
+
+.radio_button {
+  margin-bottom: 10px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  &_label {
+    margin-bottom: 10px;
+  }
+
+  &_input {
+    padding: 0 10px;
+    height: 40px;
+    border-radius: $radius-default;
+    border: none;
+    outline: none;
+  }
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+
+  &_button {
+    @include button;
+    flex: auto;
+  }
+}

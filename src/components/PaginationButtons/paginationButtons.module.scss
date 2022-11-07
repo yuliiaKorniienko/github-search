@@ -1,0 +1,14 @@
+@import './src/global-styles/variables';
+@import './src/global-styles/mixins';
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  &_button {
+    margin: 20px;
+    width: 100px;
+    @include button;
+  }
+}
